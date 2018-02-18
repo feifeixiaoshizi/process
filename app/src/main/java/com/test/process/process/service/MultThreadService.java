@@ -18,6 +18,9 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2018/1/3 0003.
+ * 带多线程的Service，每次onStartCommand接收到命令后都开启一个子线程去处理。
+ *
+ *
  */
 
 public class MultThreadService extends Service {

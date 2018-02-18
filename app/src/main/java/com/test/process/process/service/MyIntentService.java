@@ -8,6 +8,8 @@ import android.util.Log;
 
 /**
  * Created by jianshengli on 2018/2/18.
+ *
+ * 继承自IntentService使用单线程多任务的模式解决发送来的请求。
  */
 
 public class MyIntentService extends IntentService {
