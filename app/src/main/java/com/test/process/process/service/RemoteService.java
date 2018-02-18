@@ -13,6 +13,9 @@ import com.test.process.process.IMyAidlInterface;
 
 /**
  * Created by Administrator on 2018/1/3 0003.
+ *
+ * 远程进程中的服务对象
+ *
  */
 
 public class RemoteService extends Service {

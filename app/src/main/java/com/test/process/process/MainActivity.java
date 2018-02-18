@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //测试Service中默认的主线程处理同时发送的两个开启请求
     private void startService1() {
         Intent bindOtherService = new Intent();
         bindOtherService.setAction("com.test.otherservice");
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    //测试Service中通过单个子线程处理同时发送的两个开启请求
     private void startIntentService1() {
         Intent bindOtherService = new Intent();
         bindOtherService.setAction("com.test.intetnservice");
@@ -106,6 +107,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    //测试Service中通过多线程处理同时发送的两个开启请求
     private void startMultService1() {
         Intent bindOtherService = new Intent();
         bindOtherService.setAction("com.test.multservice");
@@ -127,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //根据进程id获取进程名称
     public String getProcessName(Context cxt, int pid) {
         ActivityManager am = (ActivityManager)
                 cxt.getSystemService(Context.ACTIVITY_SERVICE);
